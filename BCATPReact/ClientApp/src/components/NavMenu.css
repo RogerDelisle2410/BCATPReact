@@ -1,0 +1,56 @@
+﻿a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+html {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+        background: blue;
+    }
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button {
+    display: block;
+    margin: auto;
+    /*background: lightblue;*/
+    font-weight: bold;
+    height: 30px;
+    width: 100px;
+    background: linear-gradient(to bottom right, lightblue, cyan);
+    background-color: cyan;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    width: 100%;
+    margin: auto;
+    /*    background: linear-gradient(to bottom right, lightblue, blue );
+    background-color: aqua*/
+}
+
+.one {
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+}
+
+.two {
+    margin-left: 25%;
+    height: auto;
+    align-items: inherit;
+}

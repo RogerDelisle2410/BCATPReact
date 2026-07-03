@@ -1,0 +1,39 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+# 1. Install Node
+- task: NodeTool@0
+  inputs:
+    versionSpec: '18.x'
+  displayName: 'Install Node.js'
+
+# 2. Install npm packages
+- script: |
+    cd BCATPReact/ClientApp
+    npm install
+  displayName: 'npm install'
+
+# 3. Build React app
+- script: |
+    cd BCATPReact/ClientApp
+    npm run build
+  displayName: 'npm run build'
+
+# 4. Copy build output to staging directory
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'BCATPReact/ClientApp/build'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+  displayName: 'Copy React build to staging'
+
+# 5. Publish artifact
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+  displayName: 'Publish React artifact'

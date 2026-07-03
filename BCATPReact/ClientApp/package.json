@@ -1,0 +1,73 @@
+{
+  "name": "bcatpreact",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@googlemaps/react-wrapper": "^1.1.26",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "^5.5.0",
+    "@table-library/react-table-library": "^2.0.8",
+    "@types/react-router-dom": "^5.3.3",
+    "bootstrap": "^4.6.0",
+    "dotenv": "^16.0.0",
+    "jquery": "^3.6.0",
+    "merge": "^2.1.1",
+    "oidc-client": "^1.11.5",
+    "react": "17.0.2",
+    "react-admin": "^3.19.10",
+    "react-awesome-lightbox": "^1.8.1",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-images": "^1.2.0-beta.7",
+    "react-modal": "^3.14.4",
+    "react-modal-image": "^2.5.0",
+    "react-paginate": "^8.1.2",
+    "react-pagination-table": "^2.0.2",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.3.0",
+    "react-table": "^7.7.0",
+    "simplebar-react": "^3.2.3",
+    "react-tooltip": "^4.2.21",
+    "reactjs-popup": "^2.0.5",
+    "reactstrap": "^8.4.1",
+    "rimraf": "^2.6.2",
+    "simple-react-lightbox": "^3.6.9-0",
+    "state-pool": "^0.7.1"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.48.2",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.13",
+    "ajv": "^6.12.6",
+    "cross-env": "^5.2.0",
+    "eslint-config-react-app": "^7.0.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "postcss": "^8.4.12",
+    "react-scripts": "^5.0.0",
+    "typescript": "^3.9.10"
+  },
+  "scripts": {
+    "start": "rimraf ./build && react-scripts start",
+    "build": "react-scripts build",
+    "test": "cross-env CI=true react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src/"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
