@@ -19,17 +19,7 @@ interface FetchBcatpDataState {
     showModal: boolean;
     modalType: string;       // "map" | "image"
     modalData: BcatpData | null;
-}
-
-//interface FetchBcatpDataState {
-//    bcatpList: BcatpData[];
-//    maintList: MaintData[];
-//    loading: boolean;
-//    searchValue: string;
-//    wikiLink: string;
-//    currentPage: number;
-//    pageSize: number;
-//}
+} 
 
 export class FetchBcatp extends React.Component<
     RouteComponentProps<{ tableName: string }>,
