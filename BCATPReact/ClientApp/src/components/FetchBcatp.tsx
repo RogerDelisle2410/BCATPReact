@@ -464,15 +464,9 @@ export class FetchBcatp extends React.Component<
             content = (
                 <div>
                     <h2>{modalData.name} — Map</h2>
-                    <iframe
-                        width="600"
-                        height="450"
-                        style={{ border: 0 }}
-                        loading="lazy"
-                        allowFullScreen
-                        src={`https://www.google.com/maps?q=${modalData.latitude},${modalData.longitude}&t=k&z=15&output=embed`}
-
-                    ></iframe>
+                    <iframe width="600" height="450" style={{ border: 0 }} loading="lazy" allowFullScreen
+                        src={`https://www.google.com/maps?q=${modalData.latitude},${modalData.longitude}&t=k&z=15&output=embed`}>
+                    </iframe>
                 </div>
             );
         }
