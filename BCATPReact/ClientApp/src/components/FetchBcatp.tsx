@@ -561,19 +561,7 @@ export class FetchBcatp extends React.Component<
                     : this.renderTableStandard(this.state.bcatpList)}
             </>
         );
-    }
-
-    //render() {
-    //    if (this.state.loading) return <p><em>Loading...</em></p>;
-    //    const modal = this.renderModal();
-
-    //    const isImageMode =
-    //        this.tabName === "tanks" || this.tabName === "planes" || this.tabName === "ships";
-
-    //    return isImageMode
-    //        ? this.renderTableImage(this.state.bcatpList)
-    //        : this.renderTableStandard(this.state.bcatpList);
-    //}
+    } 
 }
 
 export class BcatpData {
