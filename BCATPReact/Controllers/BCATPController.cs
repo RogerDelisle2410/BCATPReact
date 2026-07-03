@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
 namespace BCATPReact.Controllers
-{ /*Roger*/
+{  
     public class ALLDATAController : ControllerBase
     {
         private readonly ALLDataAccessLayer objalldata = new();
